@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohid-Figma</title>
+    <link rel="icon" href="./images/home-watch.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="container header-container">
+        <div class="header-left-logo">
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            height="28"
+            viewBox="0 96 960 960"
+            width="28"
+          >
+            <path
+              d="m366 976-47-171q-55-35-87-95t-32-134q0-74 32-134.5t87-94.5l47-171h228l47 171q55 34 87 94.5T760 576q0 74-32 134t-87 95l-47 171H366Zm114-180q92 0 156-64t64-156q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 92 64 156t156 64Zm-87-484q23-7 44.5-10.5T480 298q21 0 42.5 3.5T567 312l-18-76H411l-18 76Zm18 604h138l18-76q-23 6-44.5 9.5T480 853q-21 0-42.5-3.5T393 840l18 76Zm-18-680h174-174Zm18 680h-18 174-156Z"
+            />
+          </svg>
+          <span>Mohid</span>
+        </div>
+        <div class="header-menus" id="navbar-responsive">
+          <ul class="menu-ul">
+            <li class="menu-li"><a class="menu-link" href="#home">Home</a></li>
+            <li class="menu-li dropdown brands">
+              <a class="menu-link" href="#brands"
+                >Brands
+                <!-- <img src="images/header-menus-brands-vector.svg" alt="" /> -->
+              </a>
+              <!-- <div class="dropdown-content">
+                <ul class="dropdown-ul">
+                  <li class="dropdown-li">
+                    <a href="#">
+                      <img width="20px" src="./images/apple.svg" alt="" />
+                      Apple
+                    </a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a class="samsung" href="#">
+                      <img width="45px" src="./images/samsung.png" alt="" />
+                      Samsung
+                    </a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="#">
+                      <img width="20px" src="./images/mi.png" alt="" />
+                      Xiaomi
+                    </a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="#">
+                      <img width="20px" src="./images/fitbit.png" alt="" />
+                      FitBit
+                    </a>
+                  </li>
+                  <li class="dropdown-li">
+                    <a href="#">
+                      <img width="20px" src="./images/huawei.png" alt="" />
+                      Huawei
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="menu-li">
+              <a class="menu-link" href="#products">Recent Products</a>
+            </li>
+            <li class="menu-li"><a class="menu-link" href="#">Contact</a></li>
+            <li class="menu-li"><a class="menu-link" href="#about">About</a></li>
+            <button id="navbar-close" class="close">
+              <img width="40px" src="./images/close.png" alt="" />
+            </button>
+          </ul>
+        </div>
+        <div class="header-right">
+          <div class="header-right-logo">
+            <a href="#">
+              <svg
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+                height="25"
+                viewBox="0 96 960 960"
+                width="25"
+              >
+                <path
+                  d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header-right-logo">
+            <a href="#">
+              <svg
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+                height="25"
+                viewBox="0 96 960 960"
+                width="25"
+              >
+                <path
+                  d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header-right-logo">
+            <a href="#">
+              <svg
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+                height="25"
+                viewBox="0 96 960 960"
+                width="25"
+              >
+                <path
+                  d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM235 315l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <button id="dark-light">
+            <img width="40px" src="./images/light.svg" alt="" />
+          </button>
+          <button id="navbar-open" class="hamburger">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg
+              fill="white"
+              height="40px"
+              width="40px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 56 56"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M28,54C13.663,54,2,42.336,2,28
+		S13.663,2,28,2s26,11.664,26,26S42.337,54,28,54z"
+                />
+                <path
+                  d="M15,17h26c0.553,0,1-0.448,1-1s-0.447-1-1-1H15c-0.553,0-1,0.448-1,1S14.447,17,15,17z"
+                />
+                <path
+                  d="M45,31H11c-0.553,0-1,0.448-1,1s0.447,1,1,1h34c0.553,0,1-0.448,1-1S45.553,31,45,31z"
+                />
+                <path
+                  d="M45,23H11c-0.553,0-1,0.448-1,1s0.447,1,1,1h34c0.553,0,1-0.448,1-1S45.553,23,45,23z"
+                />
+                <path
+                  d="M41,39H15c-0.553,0-1,0.448-1,1s0.447,1,1,1h26c0.553,0,1-0.448,1-1S41.553,39,41,39z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container home-container">
+          <div class="home-content">
+            <h1>
+              Discover <br />
+              Most Suitable <br />
+              Watches
+            </h1>
+            <p>
+              Find the best, reliable, and cheap smart watches here. <br />
+              We focus on product quality. Here you can find smart <br />
+              watches of almost all brands. So why you are waiting? <br />
+              Just order now!
+            </p>
+            <form action="#">
+              <input
+                class="email"
+                type="email"
+                required
+                placeholder="Find the best brands"
+                name="userEmail"
+              />
+              <button class="searchbtn" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="home-right">
+            <img src="./images/home-watch.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="brands">
+        <div class="container brands-container">
+          <div class="brands-card">
+            <div class="brands-card-img">
+              <img src="./images/brands-card1.svg" alt="" />
+            </div>
+            <div class="brands-card-content">
+              <h3>Apple</h3>
+              <p>
+                Apple is one of the <br />
+                most famous smart <br />
+                watches providing <br />
+                company.
+              </p>
+            </div>
+          </div>
+          <div class="brands-card">
+            <div class="brands-card-img">
+              <img src="./images/brands-card2.svg" alt="" />
+            </div>
+            <div class="brands-card-content">
+              <h3>Xiaomi</h3>
+              <p>
+                Xiaomi smart watches <br />
+                are produced by MI <br />
+                company.
+              </p>
+            </div>
+          </div>
+          <div class="brands-card">
+            <div class="brands-card-img">
+              <img src="./images/brands-card3.svg" alt="" />
+            </div>
+            <div class="brands-card-content">
+              <h3>FitBit</h3>
+              <p>
+                FitBit smart watches <br />
+                are best for there <br />
+                health and fitness <br />
+                features.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <div class="container products-container">
+          <div class="products-heading">
+            <p>Find your favourite smart watch.</p>
+            <h1>Our Latest Products</h1>
+          </div>
+          <div class="products-card-block">
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card1.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Apple Smart I</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span>$300.00</span>$255.00</p>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card2.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Apple Smart II</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span>$300.00</span>$255.00</p>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card3.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Apple Smart III</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span>$300.00</span>$255.00</p>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card4.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Apple Smart IV</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span>$450.00</span>$399.00</p>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card5.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Samsung Watch Pro</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p><span>$300.00</span>$255.00</p>
+              </div>
+            </div>
+            <div class="products-card">
+              <div class="products-card-img">
+                <img src="./images/products-card6.svg" alt="" />
+                <div class="shop-and-like">
+                  <img src="./images/products-card-shop.svg" alt="" />
+                  <img src="./images/products-card-like.svg" alt="" />
+                </div>
+              </div>
+              <div class="products-content">
+                <h3>Fitbit Max 1</h3>
+                <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>$155.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="view-more">
+            <a href="#">View More</a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container about-container">
+          <div class="about-heading">
+            <p>Here are our some of the best clients.</p>
+            <h1>What People Say About Us</h1>
+          </div>
+          <div class="about-carousel">
+            <div class="owl-carousel owl-theme">
+              <div class="about-card">
+                <div class="about-card-img">
+                  <img src="./images/about-card1.png" alt="">
+                </div>
+                <div class="about-card-content">
+                  <h2>Hamza Faizi</h2>
+                  <p>Don't waste time, just order! This <br> is the best website to puschase <br> smart watches.</p>
+                  <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                </div>
+              </div>
+              <div class="about-card">
+                <div class="about-card-img">
+                  <img src="./images/about-card2.png" alt="">
+                </div>
+                <div class="about-card-content">
+                  <h2>Hafiz Huzaifa</h2>
+                  <p>I've been purchasing smart <br> watches of Mohid for a long time. <br> All the products are good quality.</p>
+                  <svg
+                  width="107"
+                  height="17"
+                  viewBox="0 0 107 17"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8 1.2439L11.169 5.94565L16.4667 6.70424L12.6333 10.362L13.538 15.5294L8.8 13.0884L4.062 15.5294L4.96666 10.362L1.13333 6.70424L6.431 5.94565L8.8 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M53.2667 1.2439L55.6357 5.94565L60.9333 6.70424L57.1 10.362L58.0047 15.5294L53.2667 13.0884L48.5287 15.5294L49.4333 10.362L45.6 6.70424L50.8977 5.94565L53.2667 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M75.5 1.2439L77.869 5.94565L83.1667 6.70424L79.3333 10.362L80.238 15.5294L75.5 13.0884L70.762 15.5294L71.6667 10.362L67.8333 6.70424L73.131 5.94565L75.5 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M97.7333 1.2439L100.102 5.94565L105.4 6.70424L101.567 10.362L102.471 15.5294L97.7333 13.0884L92.9953 15.5294L93.9 10.362L90.0667 6.70424L95.3643 5.94565L97.7333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.0333 1.2439L33.4023 5.94565L38.7 6.70424L34.8667 10.362L35.7713 15.5294L31.0333 13.0884L26.2953 15.5294L27.2 10.362L23.3667 6.70424L28.6643 5.94565L31.0333 1.2439Z"
+                    fill="white"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>            
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-sbc">
+            <div class="about-sbc-left">
+              <h1>Subscribe To Newsletter</h1>
+              <p>Get free guide about smart watches daily. </p>
+              <form action="#">
+                <input
+                  class="yremail"
+                  type="email"
+                  required
+                  placeholder="Enter Email Address"
+                  name="userEmail"
+                />
+                <button class="sbcbtn" type="submit">Subscribe</button>
+              </form>
+            </div>
+            <div class="about-sbc-right">
+              <img src="./images/products-card1.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Copyright @ 2022 | Mohid</span>
+    </footer>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

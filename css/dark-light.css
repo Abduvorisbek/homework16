@@ -1,0 +1,89 @@
+/* .light header {
+    background-color: var(--light);
+} */
+
+/* .light .header-left-logo span {
+    color: black;
+} */
+
+/* .light header svg {
+    fill: black;
+} */
+/* .light  svg {
+    fill: black;
+} */
+@media (max-width:900px) {
+    .light .header-menus {
+        background: var(--light);
+    }
+    .light .menu-link::before {
+        background-color: var(--light);
+    }
+}
+/* .light #home{
+    background-color: var(--light);
+}
+.light .home-content h1{
+    color: black;
+} */
+.light .email {
+    background-color: #e2e2e2;
+}
+.light #brands {
+    background: var(--light);
+}
+.light .brands-card {
+    background: #ededed;
+}
+.light .brands-card-content h3 {
+    color: #1E1D1D;
+}
+.light #products {
+    background: var(--light);
+} 
+.light .products-heading h1 {
+    color: #1E1D1D;
+}
+.light .products-card-img {
+    background: #ededed;
+}
+.light .products-content p {
+    color: black;
+}
+.light .products-content h3 {
+    color: #1E1D1D;
+}
+.light .products-content svg path{
+    fill: black;
+}
+.light .products-content svg path{
+    stroke-width:0px;
+}
+.light #about {
+    background: var(--light);
+}
+.light .about-heading h1 {
+    color: black;
+}
+.light .about-card {
+    background: #e8e8e8;
+}
+.light .about-card-content h2 {
+    color: black;
+}
+.light .about-card-content svg path{
+    fill: black;
+    stroke-width: 0px;
+}
+.light .about-sbc {
+    background: #e8e8e8;
+}
+.light .about-sbc-left h1 {
+    color: black;
+}
+.light footer {
+    background: var(--light);
+}
+.light footer span {
+    color: black;
+}

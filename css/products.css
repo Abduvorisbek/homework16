@@ -1,0 +1,112 @@
+#products {
+  background: var(--dark);
+  padding-bottom: 150px;
+}
+.products-heading p {
+  font-family: poppins-medium;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #3858d6;
+}
+.products-heading h1 {
+  margin-top: 5px;
+  font-family: poppins-bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: white;
+}
+
+.products-card-block {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+  margin-top: 65px;
+}
+.products-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.products-card-img {
+  display: flex;
+  width: 334px;
+  padding: 28px 42px;
+  background: #1d1d1d;
+  border-radius: 10px;
+}
+.shop-and-like img {
+  width: 35px;
+  cursor: pointer;
+}
+.shop-and-like {
+  margin-top: -20px;
+  display: none;
+}
+.products-card-img:hover .shop-and-like {
+  display: block;
+}
+.products-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.products-content h3 {
+  font-family: poppins-semi-bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+}
+.products-content p {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: poppins-semi-bold;
+  font-size: 24px;
+  line-height: 120.5%;
+  color: white;
+}
+.products-content p span {
+  font-family: poppins-medium;
+  font-size: 20px;
+  line-height: 120.5%;
+  text-align: right;
+  color: #8b8e99;
+}
+.view-more {
+  margin-top: 70px;
+  text-align: center;
+}
+.view-more a {
+  font-family: poppins-semi-bold;
+  padding: 10px 40px;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 15px;
+  background: #3858d6;
+}
+
+@media (max-width: 1170px) {
+  .products-card-block {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .products-card-block {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 435px) {
+  .products-heading h1 {
+    font-size: 34px;
+  }
+}

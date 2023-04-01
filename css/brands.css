@@ -1,0 +1,42 @@
+#brands {
+  background: var(--dark);
+  padding: 73px 0 135px;
+}
+
+.brands-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+}
+
+.brands-card {
+    width: 354px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 26px;
+    padding: 46px 40px 46px 40px;
+    background: #1d1d1d;
+    border-radius: 22px;
+}
+.brands-card-content h3 {
+  font-family: poppins-bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+}
+.brands-card-content p {
+  margin-top: 10px;
+  font-family: poppins-semi-bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8e99;
+}
+
+@media (max-width:1130px) {
+    .brands-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+}

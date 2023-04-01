@@ -1,0 +1,11 @@
+footer {
+  background: #161616;
+  padding: 25px 0;
+  text-align: center;
+}
+footer span {
+  font-family: poppins-medium;
+  font-size: 16px;
+  line-height: 125.5%;
+  color: #ffffff;
+}
